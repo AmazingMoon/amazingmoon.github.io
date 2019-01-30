@@ -1,0 +1,17 @@
+{
+  "name": "vuepress-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Amazing",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^0.14.8"
+  },
+  "scripts": {
+    "blog:dev": "vuepress dev md",
+    "blog:build": "vuepress build md"
+  },
+  "dependencies": {
+    "markdown-it-katex": "^2.0.3"
+  }
+}
