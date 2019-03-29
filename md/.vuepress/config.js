@@ -1,11 +1,12 @@
 module.exports = {
     head: [
         ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.6.0/dist/katex.min.css'}],
-        ['link', { rel: 'icon', href: `/logo.png` }],
+        ['link', { rel: 'icon', href: `/favicon.ico` }],
     ],
     title: 'Amazing',
     dest:'dist',
     description: '文艺青年',
+    serviceWorker: true,
     themeConfig: {
         displayAllHeaders: true,
         nav: [
