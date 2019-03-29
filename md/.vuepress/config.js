@@ -13,6 +13,12 @@ module.exports = {
             {text: 'Home', link: '/'},
             {text: 'Weibo', link: 'https://weibo.com/amazingmoon'},
             {text: 'GitHub', link: 'https://github.com/AmazingMoon'},
+            {
+                text: 'Links',
+                items: [
+                    { text: '堂的博客', link: 'https://jintang.github.io' },
+                ]
+            }
         ],
         sidebar: [
             {
