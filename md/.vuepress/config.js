@@ -7,8 +7,10 @@ module.exports = {
     dest:'dist',
     description: '文艺青年',
     serviceWorker: true,
+    ga: 'UA-137262563-1',
     themeConfig: {
         displayAllHeaders: true,
+        lastUpdated: 'Last Updated',
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Weibo', link: 'https://weibo.com/amazingmoon'},
