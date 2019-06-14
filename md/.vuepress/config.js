@@ -7,6 +7,9 @@ module.exports = {
         ['link', {rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: "180x180"}],
         ['link', {rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: "#5bbad5"}],
         ['link', {rel: 'manifest', href: '/site.webmanifest'}],
+        ['meta', {name: 'msapplication-TileColor', content: "#da532c"}],
+        ['meta', {name: 'theme-color', content: "#ffffff"}],
+        ['meta', {name: 'msapplication-config', content: "/browserconfig.xml"}]
     ],
     title: 'Amazing',
     dest:'dist',
