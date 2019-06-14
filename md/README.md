@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: /panda.png
 actionText: 开始 →
 actionLink: Blockchain/fabric-peer
 features:

@@ -10,7 +10,7 @@ after_script:
   - git config user.name "AmazingMoon"
   - git config user.email "804721028@qq.com"
   - git add .
-  - git commit -m ":memo:\ deploy blog by Travis CI"
+  - git commit -m ":robot:Deploy blog by Travis CI"
   - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:master
 
 branches:

@@ -1,11 +1,16 @@
 module.exports = {
     head: [
         ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.6.0/dist/katex.min.css'}],
-        ['link', { rel: 'icon', href: `/favicon.ico` }],
+        ['link', {rel: 'icon', href: '/favicon.ico'}],
+        ['link', {rel: 'icon', href: '/favicon-16x16.png', sizes: "16x16", type: "image/png"}],
+        ['link', {rel: 'icon', href: '/favicon-32x32.png', sizes: "32x32", type: "image/png"}],
+        ['link', {rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: "180x180"}],
+        ['link', {rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: "#5bbad5"}],
+        ['link', {rel: 'manifest', href: '/site.webmanifest'}],
     ],
     title: 'Amazing',
     dest:'dist',
-    description: '文艺青年',
+    description: '苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能',
     serviceWorker: true,
     ga: 'UA-137262563-1',
     themeConfig: {
