@@ -56,6 +56,12 @@ module.exports = {
                     'Ruby/sidekiq-cron'
                 ]
             },
+            {
+                title: 'Mobile',
+                children: [
+                    'Mobile/custom-expansion-panel.md'
+                ]
+            }
         ]
     },
     markdown: {
