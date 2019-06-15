@@ -21,8 +21,13 @@ module.exports = {
         lastUpdated: 'Last Updated',
         nav: [
             {text: 'Home', link: '/'},
-            {text: 'Weibo', link: 'https://weibo.com/amazingmoon'},
-            {text: 'GitHub', link: 'https://github.com/AmazingMoon'},
+            {
+                text: 'FollowMe',
+                items: [
+                    {text: 'GitHub', link: 'https://github.com/AmazingMoon'},
+                    {text: 'Weibo', link: 'https://weibo.com/amazingmoon'}
+                ]
+            },
             {
                 text: 'Links',
                 items: [
