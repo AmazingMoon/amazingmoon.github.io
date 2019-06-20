@@ -4,7 +4,7 @@ Sidekiq-Cron是一个基于Sidekiq的插件（Sidekiq是一个简单高效的Rub
 :::
 
 #### 安装
-```
+``` bash
   gem install sidekiq 
   gem install sidekiq-cron
 ```
@@ -45,9 +45,8 @@ config.active_job.queue_adapter = :sidekiq
 ```
 
 #### 启动
-``` shell
-redis-server &
-sidekiq
+``` bash
+redis-server & sidekiq
 ```
 
 *由于redis为sidekiq提供数据存储，所以启动sidekiq前必须先启动redis,更多关于redis请参考[redis](https://github.com/antirez/redis)*

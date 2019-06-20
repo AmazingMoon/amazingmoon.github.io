@@ -26,7 +26,7 @@
 ---
 1.  新建并且切换到分支source
 
-```
+``` bash
 git checkout -b source
 ```
 
@@ -59,7 +59,7 @@ env:
 
 3. push分支到远程Travis-CI branch
 
-```
+``` bash
 git push origin source:source
 ```
 > 最后
