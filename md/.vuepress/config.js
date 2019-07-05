@@ -56,15 +56,21 @@ module.exports = {
                 ]
             },
             {
-                title: 'Ruby',
+                title: 'MachineLearning',
                 children: [
-                    'Ruby/sidekiq-cron'
+                    'MachineLearning/mnist'
                 ]
             },
             {
                 title: 'Mobile',
                 children: [
                     'Mobile/custom-expansion-panel.md'
+                ]
+            },
+            {
+                title: 'Ruby',
+                children: [
+                    'Ruby/sidekiq-cron'
                 ]
             }
         ]
