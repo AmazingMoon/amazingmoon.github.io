@@ -5,7 +5,7 @@
   "author": "Amazing",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^0.14.8"
+    "vuepress": "^1.0.2"
   },
   "scripts": {
     "blog:dev": "vuepress dev md",

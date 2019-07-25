@@ -38,7 +38,6 @@ module.exports = {
         sidebar: [
             {
                 title: 'Blockchain',
-                collapsable: false,
                 children: [
                     'Blockchain/fabric-peer'
                 ]
