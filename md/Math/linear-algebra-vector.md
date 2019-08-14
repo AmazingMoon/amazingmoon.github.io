@@ -3,6 +3,10 @@
 为什么要学线性代数，线性代数中的向量
 :::
 
+::: danger 矩阵句法渲染异常
+受限于插件功能，矩阵句法渲染异常，[issue](https://github.com/vuepress/vuepress-plugin-mathjax/issues/8),后续会持续跟进
+:::
+
 > 学习动机
 ---
 #### 空间想象给我们的直观感受

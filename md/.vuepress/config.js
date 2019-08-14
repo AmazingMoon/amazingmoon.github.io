@@ -22,7 +22,13 @@ module.exports = {
             serviceWorker: true,
             updatePopup: true,
             popupComponent: 'MySWUpdatePopup',
-        }
+        },
+        mathjax: {
+            target: 'chtml',
+            presets: [
+                '\\def\\lr#1#2#3{\\left#1#2\\right#3}',
+            ],
+        },
     },
     themeConfig: {
         displayAllHeaders: true,
@@ -82,8 +88,7 @@ module.exports = {
             }
         ]
     },
-    // extendMarkdown: md => {
-    //     md.set({breaks: true});
-    //     md.use(require("markdown-it-katex"));
-    // }
+    extendMarkdown: md => {
+
+    }
 };

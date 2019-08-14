@@ -13,5 +13,7 @@
     "blog:dev": "vuepress dev md",
     "blog:build": "vuepress build md"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vuepress-plugin-mathjax": "^1.2.8"
+  }
 }
