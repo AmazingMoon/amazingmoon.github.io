@@ -12,10 +12,18 @@ module.exports = {
         ['meta', {name: 'msapplication-config', content: "/browserconfig.xml"}]
     ],
     title: 'Amazing',
-    dest:'dist',
+    dest: 'dist',
     description: '苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能',
-    serviceWorker: true,
-    ga: 'UA-137262563-1',
+    plugins: {
+        '@vuepress/google-analytics': {
+            ga: 'UA-137262563-1',
+        },
+        '@vuepress/pwa': {
+            serviceWorker: true,
+            updatePopup: true,
+            popupComponent: 'MySWUpdatePopup',
+        }
+    },
     themeConfig: {
         displayAllHeaders: true,
         lastUpdated: 'Last Updated',
@@ -31,7 +39,7 @@ module.exports = {
             {
                 text: 'Links',
                 items: [
-                    { text: '堂的博客', link: 'https://jintang.github.io' },
+                    {text: '堂的博客', link: 'https://jintang.github.io'},
                 ]
             }
         ],
@@ -74,9 +82,8 @@ module.exports = {
             }
         ]
     },
-    markdown: {
-        config: md => {
-            md.use(require("markdown-it-katex"));
-        }
-    }
+    // extendMarkdown: md => {
+    //     md.set({breaks: true});
+    //     md.use(require("markdown-it-katex"));
+    // }
 };
