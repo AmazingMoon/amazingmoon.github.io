@@ -1,3 +1,7 @@
+---
+metaTitle: Amazing's blog | CI
+date: 2018-01-30
+---
 ### Travis CI部署hexo
 ::: tip CI(Continuous integration), 中文叫持续集成，最早是由thoughtworks的首席科学家Martin Fowler提出
 对持续集成不太了解的可以参考这几篇文章:【[文章1](http://insights.thoughtworks.cn/faq-in-continuous-integration/)】、【[文章2](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)】

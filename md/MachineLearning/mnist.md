@@ -1,3 +1,7 @@
+---
+metaTitle: Amazing's blog | MachineLearning
+date: 2019-07-05
+---
 ### 机器学习之MNIST
 ::: tip 本文主要有两个内容：
 softmax回归算法和使用TensorFlow训练一个MNIST模型

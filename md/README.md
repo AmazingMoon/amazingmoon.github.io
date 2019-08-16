@@ -3,6 +3,7 @@ home: true
 heroImage: /panda.png
 actionText: 开始吧 →
 actionLink: Blockchain/fabric-peer
+permalink: /
 features:
 - title: 【一】
   details: 学而时习之，不亦说乎？

@@ -1,4 +1,6 @@
 ---
+metaTitle: Amazing's blog | Flutter
+date: 2019-06-16
 pageClass: custom-expansion-panel
 ---
 
