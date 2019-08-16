@@ -7,7 +7,7 @@ script:
 after_script:
   - cd dist
   - git init
-  - git config user.name "AmazingMoon"
+  - git config user.name "Amazing"
   - git config user.email "804721028@qq.com"
   - git add .
   - git commit -m ":robot:Deploy blog by Travis CI"

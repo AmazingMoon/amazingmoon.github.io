@@ -29,10 +29,15 @@ module.exports = {
                 '\\def\\lr#1#2#3{\\left#1#2\\right#3}',
             ],
         },
+        '@vuepress/medium-zoom': {
+            selector: '.theme-default-content :not(a) > img',
+        },
+        '@vuepress/back-to-top': {}
     },
     themeConfig: {
         displayAllHeaders: true,
         lastUpdated: 'Last Updated',
+        logo: '/panda.png',
         nav: [
             {text: 'Home', link: '/'},
             {
@@ -75,9 +80,9 @@ module.exports = {
                 ]
             },
             {
-                title: 'Mobile',
+                title: 'Flutter',
                 children: [
-                    'Mobile/custom-expansion-panel.md'
+                    'Flutter/custom-expansion-panel.md'
                 ]
             },
             {
