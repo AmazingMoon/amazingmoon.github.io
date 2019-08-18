@@ -13,8 +13,8 @@ module.exports = {
     ],
     title: 'Amazing',
     dest: 'dist',
-    description: '苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能',
-    permalink: "/:year-:month-:day/:regular",
+    description: 'Talk is cheap. Show me the code.',
+    permalink: "/:year-:month-:day:regular",
     plugins: {
         '@vuepress/google-analytics': {
             ga: 'UA-137262563-1',
