@@ -16,7 +16,7 @@
     "blog:build": "vuepress build md"
   },
   "dependencies": {
-    "vuepress-plugin-live2d": "^0.0.2",
+    "vuepress-plugin-live2d": "^0.0.4",
     "vuepress-plugin-mathjax": "^1.2.8"
   }
 }
