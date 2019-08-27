@@ -7216,10 +7216,10 @@ vuepress-plugin-container@^2.0.0:
   dependencies:
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-live2d@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.npm.taobao.org/vuepress-plugin-live2d/download/vuepress-plugin-live2d-0.0.4.tgz#43f9b3b2e504a54bf406d3c2601292b1bd366bb5"
-  integrity sha1-Q/mzsuUEpUv0BtPCYBKSsb02a7U=
+vuepress-plugin-live2d@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-live2d/download/vuepress-plugin-live2d-0.0.5.tgz#5a7f803d790631796b964320ffd6b5981c6ad3b8"
+  integrity sha1-Wn+APXkGMXlrlkMg/9a1mBxq07g=
 
 vuepress-plugin-mathjax@^1.2.8:
   version "1.2.8"

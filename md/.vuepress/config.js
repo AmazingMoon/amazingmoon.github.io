@@ -34,7 +34,7 @@ module.exports = {
         },
         '@vuepress/back-to-top': {},
         'vuepress-plugin-live2d': {
-            modelName: '',
+            modelName: ['hijiki', 'tororo'],
             mobileShow: true
         }
     },
