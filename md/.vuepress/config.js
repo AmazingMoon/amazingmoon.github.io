@@ -39,6 +39,7 @@ module.exports = {
         }
     },
     themeConfig: {
+        activeHeaderLinks: false,
         displayAllHeaders: true,
         lastUpdated: 'Last Updated',
         logo: '/panda.png',
