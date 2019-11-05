@@ -79,6 +79,12 @@ module.exports = {
                 ]
             },
             {
+                title: 'JavaScript',
+                children: [
+                    'JavaScript/js-array'
+                ]
+            },
+            {
                 title: 'Math',
                 children: [
                     'Math/linear-algebra-vector'
