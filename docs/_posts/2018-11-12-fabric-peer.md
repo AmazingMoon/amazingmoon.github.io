@@ -1,12 +1,14 @@
 ---
 metaTitle: Amazing's blog | Blockchain
 date: 2018-11-12
+tags:
+    - Blockchain
+author: Amazing
+location: Xi'an
+summary: Fabric是Hyperledger下的顶级项目，一个面向企业的分布式账本平台
+         本文主要介绍Fabric节点间的网络架构
 ---
 ### Fabric节点间的网络架构
-
-::: tip Fabric是Hyperledger下的顶级项目，一个面向企业的分布式账本平台
-本文主要介绍Fabric节点间的网络架构
-:::
 
 > 4种不同类型的服务节点
 ---

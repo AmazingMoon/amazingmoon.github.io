@@ -1,4 +1,5 @@
 node_modules/
 .idea
-md/.vuepress/theme/
+docs/.vuepress/theme/
 resume.md
+dist/resume

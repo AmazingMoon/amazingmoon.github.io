@@ -1,11 +1,14 @@
 ---
 metaTitle: Amazing's blog | Math
 date: 2018-12-27
+tags:
+    - Math
+author: Amazing
+location: Xi'an
+summary: 本篇文章主要有两个内容：
+         为什么要学线性代数，线性代数中的向量
 ---
 ### 【线性代数】学习动机与向量
-::: tip 本篇文章主要有两个内容：
-为什么要学线性代数，线性代数中的向量
-:::
 
 ::: danger 矩阵句法渲染异常
 受限于插件功能，矩阵句法渲染异常，[issue](https://github.com/vuepress/vuepress-plugin-mathjax/issues/8),后续会持续跟进

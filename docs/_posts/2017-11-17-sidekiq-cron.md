@@ -1,11 +1,13 @@
 ---
 metaTitle: Amazing's blog | Ruby
 date: 2017-11-17
+tags:
+    - Ruby
+author: Amazing
+location: Xi'an
+summary: Sidekiq-Cron是一个基于Sidekiq的插件（Sidekiq是一个简单高效的Ruby后台处理,使用线程在同一个进程中同时处理多个作业,它不需要Rails，但会与Rails紧密集成），使用这个插件在rails中执行定时任务
 ---
 ### 谈一谈Sidekiq-Cron
-::: tip
-Sidekiq-Cron是一个基于Sidekiq的插件（Sidekiq是一个简单高效的Ruby后台处理,使用线程在同一个进程中同时处理多个作业,它不需要Rails，但会与Rails紧密集成），使用这个插件在rails中执行定时任务
-:::
 
 #### 安装
 ``` bash

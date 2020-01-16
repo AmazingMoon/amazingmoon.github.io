@@ -2,13 +2,15 @@
 metaTitle: Amazing's blog | Flutter
 date: 2019-06-16
 pageClass: custom-expansion-panel
+tags:
+    - Flutter
+author: Amazing
+location: Xi'an
+summary: Flutter中原生的ExpansionPanel(伸缩面板)组件实现的效果并不能满足常规的需求
+         本文主要讲述如何自定义一个ExpansionPanelList组件，解决原生组件中的痛点
 ---
 
 ### Flutter中自定义ExpansionPanelList组件
-
-::: tip Flutter中原生的ExpansionPanel(伸缩面板)组件实现的效果并不能满足常规的需求
-本文主要讲述如何自定义一个ExpansionPanelList组件，解决原生组件中的痛点
-:::
 
 
 - 痛点一：打开的面板与相邻的标题有间隙，效果真的很丑
