@@ -1,5 +1,5 @@
 ---
-metaTitle: Amazing's blog | CI
+metaTitle: CI
 date: 2018-01-30
 tags:
     - CI

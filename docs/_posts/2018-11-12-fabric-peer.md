@@ -1,5 +1,5 @@
 ---
-metaTitle: Amazing's blog | Blockchain
+metaTitle: Blockchain
 date: 2018-11-12
 tags:
     - Blockchain

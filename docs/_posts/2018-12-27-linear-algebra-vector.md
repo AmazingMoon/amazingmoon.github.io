@@ -1,5 +1,5 @@
 ---
-metaTitle: Amazing's blog | Math
+metaTitle: Math
 date: 2018-12-27
 tags:
     - Math

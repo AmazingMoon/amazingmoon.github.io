@@ -1,5 +1,5 @@
 ---
-metaTitle: Amazing's blog | Ruby
+metaTitle: Ruby
 date: 2017-11-17
 tags:
     - Ruby
