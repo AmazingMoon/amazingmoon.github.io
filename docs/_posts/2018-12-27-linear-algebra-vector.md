@@ -10,10 +10,6 @@ summary: 本篇文章主要有两个内容：
 ---
 ### 【线性代数】学习动机与向量
 
-::: danger 矩阵句法渲染异常
-当前插件不支持矩阵句法，[issue](https://github.com/vuepress/vuepress-plugin-mathjax/issues/8),后续会持续跟进
-:::
-
 > 学习动机
 ---
 #### 空间想象给我们的直观感受

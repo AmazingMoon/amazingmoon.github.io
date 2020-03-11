@@ -66,9 +66,7 @@ module.exports = {
             updatePopup: true,
             popupComponent: 'MySWUpdatePopup',
         },
-        mathjax: {
-
-        },
+        'latex':{},
         'vuepress-plugin-container': {
             type: 'danger',
             defaultTitle: {
@@ -85,7 +83,4 @@ module.exports = {
             mobileShow: true
         }
     },
-    extendMarkdown: md => {
-
-    }
 };
