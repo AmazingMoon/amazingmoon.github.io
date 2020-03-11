@@ -67,10 +67,14 @@ module.exports = {
             popupComponent: 'MySWUpdatePopup',
         },
         mathjax: {
-            target: 'chtml',
-            presets: [
-                '\\def\\lr#1#2#3{\\left#1#2\\right#3}',
-            ],
+
+        },
+        'vuepress-plugin-container': {
+            type: 'danger',
+            defaultTitle: {
+                '/': 'TIP',
+                '/zh/': '提示',
+            },
         },
         '@vuepress/medium-zoom': {
             selector: '.theme-default-content :not(a) > img',
@@ -81,74 +85,6 @@ module.exports = {
             mobileShow: true
         }
     },
-
-
-    // themeConfig: {
-    //     activeHeaderLinks: false,
-    //     displayAllHeaders: true,
-    //     lastUpdated: 'Last Updated',
-    //     logo: '/panda.png',
-    //     nav: [
-    //         {text: 'Home', link: '/'},
-    //         {
-    //             text: 'FollowMe',
-    //             items: [
-    //                 {text: 'GitHub', link: 'https://github.com/AmazingMoon'},
-    //                 {text: 'Weibo', link: 'https://weibo.com/amazingmoon'}
-    //             ]
-    //         },
-    //         {
-    //             text: 'Links',
-    //             items: [
-    //                 {text: '堂的博客', link: 'https://jintang.github.io'},
-    //             ]
-    //         }
-    //     ],
-    //     sidebar: [
-    //         {
-    //             title: 'Blockchain',
-    //             children: [
-    //                 'Blockchain/fabric-peer'
-    //             ]
-    //         },
-    //         {
-    //             title: 'CI',
-    //             children: [
-    //                 'CI/travis-ci-hexo'
-    //             ]
-    //         },
-    //         {
-    //             title: 'Flutter',
-    //             children: [
-    //                 'Flutter/custom-expansion-panel'
-    //             ]
-    //         },
-    //         {
-    //             title: 'JavaScript',
-    //             children: [
-    //                 'JavaScript/js-array'
-    //             ]
-    //         },
-    //         {
-    //             title: 'Math',
-    //             children: [
-    //                 'Math/linear-algebra-vector'
-    //             ]
-    //         },
-    //         {
-    //             title: 'MachineLearning',
-    //             children: [
-    //                 'MachineLearning/mnist'
-    //             ]
-    //         },
-    //         {
-    //             title: 'Ruby',
-    //             children: [
-    //                 'Ruby/sidekiq-cron'
-    //             ]
-    //         }
-    //     ]
-    // },
     extendMarkdown: md => {
 
     }

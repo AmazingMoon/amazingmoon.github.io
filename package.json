@@ -9,7 +9,7 @@
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "@vuepress/plugin-medium-zoom": "^1.0.0-rc.1",
     "@vuepress/plugin-pwa": "^1.0.0-rc.1",
-    "@vuepress/theme-blog": "^1.6.0",
+    "@vuepress/theme-blog": "^2.2.0",
     "vuepress": "^1.2.0"
   },
   "scripts": {
@@ -17,6 +17,7 @@
     "blog:build": "vuepress build docs"
   },
   "dependencies": {
+    "vuepress-plugin-container": "^2.1.2",
     "vuepress-plugin-live2d": "^0.0.5",
     "vuepress-plugin-mathjax": "^1.2.8"
   }
