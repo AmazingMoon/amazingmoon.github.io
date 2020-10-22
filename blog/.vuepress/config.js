@@ -17,6 +17,7 @@ module.exports = {
     theme: '@vuepress/blog',
     themeConfig: {
         dateFormat: 'YYYY-MM-DD',
+        smoothScroll: true,
         nav: [
             {
                 text: 'Blog',
