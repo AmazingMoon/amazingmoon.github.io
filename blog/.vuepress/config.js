@@ -21,8 +21,12 @@ module.exports = {
         nav: [
             {
                 text: 'Blog',
-                link: '/',
+                link: '/posts/',
             },
+            // {
+            //     text: 'Essay',
+            //     link: '/writings/',
+            // },
             {
                 text: 'Tags',
                 link: '/tag/',
@@ -31,6 +35,25 @@ module.exports = {
             //     text: '堂的博客',
             //     link: 'https://jintang.github.io',
             // },
+        ],
+        directories: [
+            {
+                id: 'home',
+                dirname: '_home',
+                path: '/',
+                layout: 'HomeLayout',
+            },
+            {
+                id: 'post',
+                dirname: '_posts',
+                path: '/posts/',
+            },
+            {
+                id: 'writing',
+                dirname: '_writings',
+                path: '/writings/',
+                title: '隨筆',
+            }
         ],
         footer: {
             contact: [
@@ -56,7 +79,13 @@ module.exports = {
         },
         sitemap: {
             hostname: 'https://amazingmoon.github.io/'
-        }
+        },
+        feed: {
+            canonical_base: 'https://amazingmoon.github.io/',
+            rss: true,
+            atom: false,
+            json: false
+        },
     },
     plugins: {
         '@vuepress/google-analytics': {
@@ -67,7 +96,7 @@ module.exports = {
             updatePopup: true,
             popupComponent: 'MySWUpdatePopup',
         },
-        'latex':{},
+        'latex': {},
         'vuepress-plugin-container': {
             type: 'danger',
             defaultTitle: {
