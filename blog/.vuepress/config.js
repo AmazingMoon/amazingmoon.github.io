@@ -47,12 +47,13 @@ module.exports = {
                 id: 'post',
                 dirname: '_posts',
                 path: '/posts/',
+                title: 'Blog',
             },
             {
                 id: 'writing',
                 dirname: '_writings',
                 path: '/writings/',
-                title: '隨筆',
+                title: 'Essay',
             }
         ],
         footer: {
