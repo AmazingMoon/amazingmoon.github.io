@@ -87,15 +87,14 @@ module.exports = {
             atom: false,
             json: false
         },
+        pwa: {
+            serviceWorker: true,
+            updatePopup: true
+        },
     },
     plugins: {
         '@vuepress/google-analytics': {
             ga: 'UA-137262563-1',
-        },
-        '@vuepress/pwa': {
-            serviceWorker: true,
-            updatePopup: true,
-            popupComponent: 'MySWUpdatePopup',
         },
         'latex': {},
         'vuepress-plugin-container': {
@@ -106,7 +105,7 @@ module.exports = {
             },
         },
         '@vuepress/medium-zoom': {
-            selector: '.theme-default-content :not(a) > img',
+            selector: '.vuepress-blog-theme-content :not(a) > img',
         },
         '@vuepress/back-to-top': {},
         'vuepress-plugin-live2d': {
