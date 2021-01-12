@@ -108,6 +108,7 @@ module.exports = {
             selector: '.vuepress-blog-theme-content :not(a) > img',
         },
         '@vuepress/back-to-top': {},
+        'mermaidjs':{},
         'vuepress-plugin-live2d': {
             modelName: ['hijiki', 'tororo'],
             mobileShow: true
