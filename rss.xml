@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Amazing</title>
+        <link>https://amazingmoon.github.io/</link>
+        <description>Talk is cheap. Show me the code.</description>
+        <lastBuildDate>Sat, 05 Jun 2021 03:31:15 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+        <item>
+            <link>https://amazingmoon.github.io/1970/01/01/home/</link>
+            <guid>https://amazingmoon.github.io/1970/01/01/home/</guid>
+            <pubDate>Sat, 05 Jun 2021 03:31:15 GMT</pubDate>
+            <description><![CDATA[...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[谈一谈Sidekiq-Cron]]></title>
+            <link>https://amazingmoon.github.io/2017/11/17/sidekiq-cron/</link>
+            <guid>https://amazingmoon.github.io/2017/11/17/sidekiq-cron/</guid>
+            <pubDate>Fri, 17 Nov 2017 00:00:00 GMT</pubDate>
+            <description><![CDATA[Sidekiq-Cron是一个基于Sidekiq的插件（Sidekiq是一个简单高效的Ruby后台处理,使用线程在同一个进程中同时处理多个作业,它不需要Rails，但会与Rails紧密集成），使用这个插件在rails中执行定时任务]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Fabric节点间的网络架构]]></title>
+            <link>https://amazingmoon.github.io/2018/11/12/fabric-peer/</link>
+            <guid>https://amazingmoon.github.io/2018/11/12/fabric-peer/</guid>
+            <pubDate>Mon, 12 Nov 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fabric是Hyperledger下的顶级项目，一个面向企业的分布式账本平台 本文主要介绍Fabric节点间的网络架构]]></description>
+            <enclosure url="https://amazingmoon.github.io/../../assets/images/Blockchain/fabric_peer1.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Travis CI部署hexo]]></title>
+            <link>https://amazingmoon.github.io/2018/01/30/travis-ci-hexo/</link>
+            <guid>https://amazingmoon.github.io/2018/01/30/travis-ci-hexo/</guid>
+            <pubDate>Tue, 30 Jan 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[CI(Continuous integration), 中文叫持续集成，最早是由thoughtworks的首席科学家Martin Fowler提出]]></description>
+            <enclosure url="https://amazingmoon.github.io/../../assets/images/CI/ci_hexo1.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[【线性代数】学习动机与向量]]></title>
+            <link>https://amazingmoon.github.io/2018/12/27/linear-algebra-vector/</link>
+            <guid>https://amazingmoon.github.io/2018/12/27/linear-algebra-vector/</guid>
+            <pubDate>Thu, 27 Dec 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[本篇文章主要有两个内容： 为什么要学线性代数，线性代数中的向量]]></description>
+            <enclosure url="https://amazingmoon.github.io/../../assets/images/Math/linear_1_1.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[记录一下JS数组的各种用法]]></title>
+            <link>https://amazingmoon.github.io/2019/10/21/js-array/</link>
+            <guid>https://amazingmoon.github.io/2019/10/21/js-array/</guid>
+            <pubDate>Mon, 21 Oct 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[本文长期更新]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Flutter中自定义ExpansionPanelList组件]]></title>
+            <link>https://amazingmoon.github.io/2019/06/16/custom-expansion-panel/</link>
+            <guid>https://amazingmoon.github.io/2019/06/16/custom-expansion-panel/</guid>
+            <pubDate>Sun, 16 Jun 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Flutter中原生的ExpansionPanel(伸缩面板)组件实现的效果并不能满足常规的需求 本文主要讲述如何自定义一个ExpansionPanelList组件，解决原生组件中的痛点]]></description>
+            <enclosure url="https://amazingmoon.github.io/../../assets/images/Mobile/Flutter/flutter_expansion_panel_list_1.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[机器学习之MNIST]]></title>
+            <link>https://amazingmoon.github.io/2019/07/05/mnist/</link>
+            <guid>https://amazingmoon.github.io/2019/07/05/mnist/</guid>
+            <pubDate>Fri, 05 Jul 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[本文主要有两个内容： softmax回归算法和使用TensorFlow训练一个MNIST模型]]></description>
+            <enclosure url="https://amazingmoon.github.io/../../assets/images/MachineLearning/mnist_1.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[axios封装]]></title>
+            <link>https://amazingmoon.github.io/2020/10/23/axios/</link>
+            <guid>https://amazingmoon.github.io/2020/10/23/axios/</guid>
+            <pubDate>Fri, 23 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[封装一个简易通用的axios函数（请求拦截、响应拦截、异常统一处理）]]></description>
+        </item>
+        <item>
+            <title><![CDATA[总结JavaScript编码简洁之道]]></title>
+            <link>https://amazingmoon.github.io/2021/01/21/js-concise-code/</link>
+            <guid>https://amazingmoon.github.io/2021/01/21/js-concise-code/</guid>
+            <pubDate>Thu, 21 Jan 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[持续更新]]></description>
+        </item>
+    </channel>
+</rss>
