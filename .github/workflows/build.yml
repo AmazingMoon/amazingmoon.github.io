@@ -34,4 +34,7 @@ jobs:
         with:
           BRANCH: master
           FOLDER: dist
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
+          commit-message: ":robot:Deploy blog by GitHub Actions"
+          git-config-name: "Amazing"
+

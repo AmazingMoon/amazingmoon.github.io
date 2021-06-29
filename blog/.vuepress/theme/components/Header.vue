@@ -49,7 +49,7 @@ export default {
   transform scale(.2)
   position absolute
   left -300px
-  top -112px
+  top -128px
   outline none
 
 .fig:hover
