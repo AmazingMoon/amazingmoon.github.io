@@ -27,47 +27,47 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "1970-01-01404.html",
-    "revision": "315a207accbadd29d6eedad47ad306c4"
+    "revision": "6ecaff4e67f9a34b5fdf635a8cb54321"
   },
   {
     "url": "1970/01/01/home/index.html",
-    "revision": "3f9db3e6ccd789dfc58eac81e90a5c03"
+    "revision": "592a91d0cd0f17991fd39cd2ddb30e19"
   },
   {
     "url": "2017/11/17/sidekiq-cron/index.html",
-    "revision": "619c79ba38f52ce008ee736ac8a8c6d3"
+    "revision": "f7ec06be0f3777df8fd8efe374ec1daa"
   },
   {
     "url": "2018/01/30/travis-ci-hexo/index.html",
-    "revision": "5833abc8d3059b6554f2a37e2119bdd2"
+    "revision": "7fb05bb65a66d582f001c7c1560a0919"
   },
   {
     "url": "2018/11/12/fabric-peer/index.html",
-    "revision": "7bd9f76ebaf8238e2638b15277ef729b"
+    "revision": "551b571cf1b98bebc3fe1f27a149bd6a"
   },
   {
     "url": "2018/12/27/linear-algebra-vector/index.html",
-    "revision": "ef5f8a4494c6a204408d4f96dc901f04"
+    "revision": "4cbf1dea16c2f598826116cb6840871a"
   },
   {
     "url": "2019/06/16/custom-expansion-panel/index.html",
-    "revision": "6a4c4a3dc1f0d68d22678d1284fd317d"
+    "revision": "4134291c963da38a7432f8ae39b2f67a"
   },
   {
     "url": "2019/07/05/mnist/index.html",
-    "revision": "859d09d370abfad5252485eda373cee7"
+    "revision": "10e121ef7b2ade9f88b6c296a7a0c9ad"
   },
   {
     "url": "2019/10/21/js-array/index.html",
-    "revision": "db2f0af056e924f826701f3b280cbed5"
+    "revision": "c984287bc26a2c766a96d154b842292d"
   },
   {
     "url": "2020/10/23/axios/index.html",
-    "revision": "a1389a00dd0936682a1fe92d158f4823"
+    "revision": "b6f4f17b0d37ec4378d42134bb10364b"
   },
   {
     "url": "2021/01/21/js-concise-code/index.html",
-    "revision": "17df4dc8e5677295b5a07b50dee39e30"
+    "revision": "a7dd0e0fc57439188f2b96351f34a492"
   },
   {
     "url": "android-chrome-192x192.png",
@@ -82,8 +82,8 @@ self.__precacheManifest = [
     "revision": "943852052ff7b1f5abc25445066015ce"
   },
   {
-    "url": "assets/css/0.styles.bb39ad9a.css",
-    "revision": "f5e361fc245ea39c88f94773027f90ca"
+    "url": "assets/css/0.styles.fa7bdfaa.css",
+    "revision": "22ddb311a1168b3d74c37d739febeff6"
   },
   {
     "url": "assets/fonts/EJRVQgYoZZY2vCFuvAFbzr-_dSb_nco.9738e026.woff2",
@@ -446,8 +446,8 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.995e6d61.js",
-    "revision": "39eab624a83e89b37885899cfccb7906"
+    "url": "assets/js/10.03524a4b.js",
+    "revision": "71a3cedf7cd054b0b4c85e7e8725130c"
   },
   {
     "url": "assets/js/11.5791dc9f.js",
@@ -470,8 +470,8 @@ self.__precacheManifest = [
     "revision": "8b014c9c1376b54b61bcda0196f57e8b"
   },
   {
-    "url": "assets/js/16.b0582279.js",
-    "revision": "e6786a0a4a2f50e5e681a2a3a6b04326"
+    "url": "assets/js/16.311639b9.js",
+    "revision": "a4f2f2468a0f35bef88be131d4db2f68"
   },
   {
     "url": "assets/js/17.9d66910e.js",
@@ -530,8 +530,8 @@ self.__precacheManifest = [
     "revision": "c4886cae0cb1bd638f2273d8a1cb19b8"
   },
   {
-    "url": "assets/js/7.2fa2e616.js",
-    "revision": "2bd7dd74e852424f7e436ac3b90274b0"
+    "url": "assets/js/7.7e2aecae.js",
+    "revision": "e90318fb77f80b9d99ab1a1e99b49be0"
   },
   {
     "url": "assets/js/8.bffa29ee.js",
@@ -542,8 +542,8 @@ self.__precacheManifest = [
     "revision": "f276abc5edd7114c031c996d1b4f8227"
   },
   {
-    "url": "assets/js/app.7ee4ed36.js",
-    "revision": "63cafcc7db7055c54609f88841fb635b"
+    "url": "assets/js/app.967cd82a.js",
+    "revision": "09fcd7bff8ecfe660f194cfe3368e2b1"
   },
   {
     "url": "assets/js/vuejs-paginate.b1e5c227.js",
@@ -559,7 +559,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f4693d2833dc4fe50fe6d7394f39e689"
+    "revision": "67a08ee8e810b68d60202fd66e3ca02c"
   },
   {
     "url": "mstile-150x150.png",
@@ -571,11 +571,11 @@ self.__precacheManifest = [
   },
   {
     "url": "posts/index.html",
-    "revision": "e3c8b5ca5f624df7e97f7e78add99060"
+    "revision": "b2c9a043735b37259b71f25a45144bca"
   },
   {
     "url": "posts/page/2/index.html",
-    "revision": "a4ab07bb28835c72809a0fe768ac94c3"
+    "revision": "6dae15296a2a9d8eed5ee7e9e6a1f40e"
   },
   {
     "url": "safari-pinned-tab.svg",
@@ -583,35 +583,35 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/Blockchain/index.html",
-    "revision": "b9a9886cdb5314c8367bbf31dda21788"
+    "revision": "1449763c4f7c24f973206ee6ff11067a"
   },
   {
     "url": "tag/CI/index.html",
-    "revision": "ba6490f1f68888f0770de4c7cc7fcd4e"
+    "revision": "b29df74b804e533c2e998531597c931d"
   },
   {
     "url": "tag/Flutter/index.html",
-    "revision": "24aebb995283bb26a50f1e11d1da52a8"
+    "revision": "272f6d3e79695a06895f4e0cbd49d997"
   },
   {
     "url": "tag/index.html",
-    "revision": "a9bea08acf8a536a8ea7370bb4856e90"
+    "revision": "978c084fa7d87506d666c028948a8246"
   },
   {
     "url": "tag/JavaScript/index.html",
-    "revision": "d424c20de8f1375691b13bacda7556f3"
+    "revision": "b47f3e4840fbaeade4d900bcbee1b8bb"
   },
   {
     "url": "tag/MachineLearning/index.html",
-    "revision": "44f7f67da09d009535e826869f2ef5be"
+    "revision": "17b8f455003103c36c8ee7715aeb6353"
   },
   {
     "url": "tag/Math/index.html",
-    "revision": "e494591e275b3fb1b6f4bda04b2f2271"
+    "revision": "cbb4e18226c6f74cf191daaef9527efd"
   },
   {
     "url": "tag/Ruby/index.html",
-    "revision": "53453f90f8a33c340157542f61387756"
+    "revision": "15f95651c4d84ea05c6bb89b2d5cb6da"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
