@@ -32,7 +32,9 @@ jobs:
       - name: Git Push
         run: |
          cd dist
+         git init
          git config user.name "Amazing"
+         git config user.email "804721028@qq.com"
          git add .
          git commit -m ":robot:Deploy blog by GitHub Actions"
          git push master
