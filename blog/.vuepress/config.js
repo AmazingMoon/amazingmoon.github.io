@@ -23,18 +23,10 @@ module.exports = {
                 text: 'Blog',
                 link: '/posts/',
             },
-            // {
-            //     text: 'Essay',
-            //     link: '/writings/',
-            // },
             {
                 text: 'Tags',
                 link: '/tag/',
             },
-            // {
-            //     text: '堂的博客',
-            //     link: 'https://jintang.github.io',
-            // },
         ],
         directories: [
             {
@@ -49,12 +41,6 @@ module.exports = {
                 path: '/posts/',
                 title: 'Blog',
             },
-            {
-                id: 'writing',
-                dirname: '_writings',
-                path: '/writings/',
-                title: 'Essay',
-            }
         ],
         footer: {
             contact: [
