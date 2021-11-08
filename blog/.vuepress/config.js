@@ -50,11 +50,11 @@ module.exports = {
                 },
                 {
                     type: 'twitter',
-                    link: 'https://twitter.com/amazingmooon',
+                    link: 'https://twitter.com/amcee3000',
                 },
                 {
                     type: 'instagram',
-                    link: 'https://www.instagram.com/amazingmooon/',
+                    link: 'https://www.instagram.com/amcee3000/',
                 },
             ],
             copyright: [
