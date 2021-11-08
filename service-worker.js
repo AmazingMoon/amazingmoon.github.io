@@ -27,47 +27,47 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "1970-01-01404.html",
-    "revision": "9e78b8e3ce202060b3dccf90e0207569"
+    "revision": "ec4f58d35899fc355659908f9480088c"
   },
   {
     "url": "1970/01/01/home/index.html",
-    "revision": "e19570c85d3efdb12735f28c2e15b3d3"
+    "revision": "2100296907ef38c5eab06ba5f9a16bf9"
   },
   {
     "url": "2017/11/17/sidekiq-cron/index.html",
-    "revision": "2b8257386c19b1317f002172fb549d0c"
+    "revision": "4eeb9aa794ef03b669902f85b942a4c5"
   },
   {
     "url": "2018/01/30/travis-ci-hexo/index.html",
-    "revision": "42cbde6cb5280fbb176e4864e6650056"
+    "revision": "878f9d5e63501c2e7c0b1d0323a37cc8"
   },
   {
     "url": "2018/11/12/fabric-peer/index.html",
-    "revision": "a8f29e9dd67a8fb518eff703fedd4ab8"
+    "revision": "3569f25bfe4ff87e9174177f65299e2d"
   },
   {
     "url": "2018/12/27/linear-algebra-vector/index.html",
-    "revision": "e13a095fc2f7225a623ff08ede3a928c"
+    "revision": "5491349ec56ea16e18961e9a8f26d011"
   },
   {
     "url": "2019/06/16/custom-expansion-panel/index.html",
-    "revision": "de79aea6a228e77a95d3c4b9f5dc0d17"
+    "revision": "752b23465ce4a0c021a65dab064ba665"
   },
   {
     "url": "2019/07/05/mnist/index.html",
-    "revision": "1ec7383cc52da0b0032dda8e9d54967d"
+    "revision": "10a1000a8bdea2d0bdbddc0caf541976"
   },
   {
     "url": "2019/10/21/js-array/index.html",
-    "revision": "9e52d714b19a80baf9b8944d3a150ddd"
+    "revision": "cb4f271d062a0991d401c72eec36e8a1"
   },
   {
     "url": "2020/10/23/axios/index.html",
-    "revision": "5dd65a15251050b3dc78083ed0f8a646"
+    "revision": "7b6f16033e6dd6500b908a967f0f130d"
   },
   {
     "url": "2021/01/21/js-concise-code/index.html",
-    "revision": "7234c14ba39fa18c5a00cb45712482a0"
+    "revision": "579fb55756b413bbdcd77792b7c1ab6b"
   },
   {
     "url": "android-chrome-192x192.png",
@@ -542,8 +542,8 @@ self.__precacheManifest = [
     "revision": "be949829052b00cd566dc0618ce76bf9"
   },
   {
-    "url": "assets/js/app.9dfd2f79.js",
-    "revision": "f7215d1c79eb5e585e8b2bc3de627b95"
+    "url": "assets/js/app.8d5bbb38.js",
+    "revision": "c36e9c4728d64a16eb13a63e92f67833"
   },
   {
     "url": "assets/js/vuejs-paginate.a832fb5e.js",
@@ -559,7 +559,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f62b045df39b216a3f6b812af81a6ea1"
+    "revision": "edd155d46754e82f717ac4ea8f440c83"
   },
   {
     "url": "mstile-150x150.png",
@@ -571,11 +571,11 @@ self.__precacheManifest = [
   },
   {
     "url": "posts/index.html",
-    "revision": "95977d34e383dbda737a785ad2787211"
+    "revision": "dad8915a2cb89f634b04880b34063ad2"
   },
   {
     "url": "posts/page/2/index.html",
-    "revision": "049ebb149d8ec521c675ab1e4333417a"
+    "revision": "56b2d9dd4601b16d3f27bc8bfb80e04d"
   },
   {
     "url": "safari-pinned-tab.svg",
@@ -583,35 +583,35 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/Blockchain/index.html",
-    "revision": "b88c66c53b8e3b03a6c7fa6e411ee7fb"
+    "revision": "eec540dcce847766117e64319275405f"
   },
   {
     "url": "tag/CI/index.html",
-    "revision": "08f324183172e95329daa73cbe43b0f8"
+    "revision": "810a726c18b2d9521713c3f6aca02cbb"
   },
   {
     "url": "tag/Flutter/index.html",
-    "revision": "18817b0c39356812a8313e040294bb18"
+    "revision": "f6888623c74f38cf88c152c1d3fe69f2"
   },
   {
     "url": "tag/index.html",
-    "revision": "2631f7417c42fb7f58e3df319c45e17d"
+    "revision": "82b9b2036098133a928bd605bd316a09"
   },
   {
     "url": "tag/JavaScript/index.html",
-    "revision": "48ff2d4e8835aec6b0da07813c5adac4"
+    "revision": "27bcb791e4e1c47377d145f829f68746"
   },
   {
     "url": "tag/MachineLearning/index.html",
-    "revision": "16e19fc5ac3740074af3e674e6272264"
+    "revision": "1728073cabcca7dd321cf429c57729ba"
   },
   {
     "url": "tag/Math/index.html",
-    "revision": "fdb3e41cd030ffba1e858f505ca4ccec"
+    "revision": "255e1219f352551ff9629dd6f1e58578"
   },
   {
     "url": "tag/Ruby/index.html",
-    "revision": "988ee6e4d3dc4990a27de9f56df9df25"
+    "revision": "94d4c09346dc571fc8b1673549863a61"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
