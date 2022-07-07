@@ -1,26 +1,20 @@
 ---
-metaTitle: JavaScript
 date: 2020-10-23
-tags:
-    - JavaScript
-author: Amazing
-location: Xi'an
-summary: 封装一个简易通用的axios函数（请求拦截、响应拦截、异常统一处理）
 ---
-### axios封装
+# axios封装
 
+::: tip 几点说明
 
-> 几点说明
 - JS框架基于vue（可替换）
 - UI框架基于ant design vue（可替换）
 - 路由基于vue-router（可替换）
 - BASE_URL可配置在env文件中，用于区分环境
 - export http可挂载在window上，用于全局使用
----
+:::
 
-<<< @/assets/js/axios-http.js
+@[code](../../assets/js/axios-http.js)
 
-> 使用方法
+## 使用方法
 
 ```js
 http.get('news-list',{page:1}).then(res=>{});

@@ -1,18 +1,13 @@
 ---
-metaTitle: JavaScript
 date: 2019-10-21
-tags:
-    - JavaScript
-author: Amazing
-location: Xi'an
-summary: 本文长期更新
 ---
 
-### 记录一下JS数组的各种用法
+# 总结JS数组用法
 
-> forEach和map
+## forEach和map
 
-**forEach会修改原来的数组，而map会得到一个新的数组并返回**
+> forEach会修改原来的数组，而map会得到一个新的数组并返回
+
 ```javascript
 let arr = [1, 2, 3, 4, 5];
 arr.forEach((num, index) => {
@@ -20,6 +15,7 @@ arr.forEach((num, index) => {
 });
 //arr = [2, 4, 6, 8, 10]
 ```
+
 ```javascript
 let arr = [1, 2, 3, 4, 5];
 let doubled = arr.map(num => {
@@ -28,23 +24,28 @@ let doubled = arr.map(num => {
 //doubled = [2, 4, 6, 8, 10]
 ```
 
-> findIndex, find, filter
+## findIndex, find, filter
+
 ```javascript
 let arr = [{name: 'swk'}, {name: 'zwn'}, {name: 'swj'}];
 let index = arr.findIndex(item => item.name === 'zwn');
 //index = 1
 ```
+
 ``` javascript
 let arr = [{name: 'swk'}, {name: 'zwn'}, {name: 'swj'}];
 let obj = arr.find(item => item.name === 'zwn');
 //obj = {name: 'zwn'}
 ```
+
 ``` javascript
 let arr = [{name: 'swk'}, {name: 'zwn'}, {name: 'swj'}];
 let newArr = arr.filter(item => item.name != 'zwn');
 //newArr = [{name: 'swk'}, {name: 'swj'}]
 ```
-> sort
+
+## sort
+
 ```javascript
 let yearArr = [2016, 2018, 2017, 2019];
 yearArr.sort((a, b) => a - b);
@@ -52,7 +53,9 @@ yearArr.sort((a, b) => a - b);
 yearArr.sort((a, b) => b - a);
 //降序yearArr = [2019, 2018, 2017, 2016]
 ```
-> reduce
+
+## reduce
+
 ```javascript
 //举个例子：按属性对object分类
 let people = [
@@ -81,23 +84,28 @@ let groupedPeople = groupBy(people, 'age');
 // }
 ```
 
-> every
+## every
 
-**every测试一个数组内的所有元素是否都能通过某个指定函数的测试,它返回一个布尔值**
+>every测试一个数组内的所有元素是否都能通过某个指定函数的测试,它返回一个布尔值
+
 ```javascript
 [12, 5, 8, 130, 44].every(x => x >= 10); 
 //false
 ```
-> some
 
-**some测试数组中是不是至少有1个元素通过了被提供的函数测试,它返回的是一个Boolean类型的值**
+## some
+
+>some测试数组中是不是至少有1个元素通过了被提供的函数测试,它返回的是一个Boolean类型的值
+
 ```javascript
 [12, 5, 8, 1, 4].some(x => x > 10);
 //true
 ```
-> copyWithin
 
-**copyWithin方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，不会改变原数组的长度**
+## copyWithin
+
+>copyWithin方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，不会改变原数组的长度
+
 ```javascript
 let numbers = [1, 2, 3, 4, 5];
 numbers.copyWithin(-2, -3, -1);

@@ -33,7 +33,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
           BRANCH: master
-          FOLDER: dist
+          FOLDER: blog/.vuepress/dist
           token: ${{ secrets.ACCESS_TOKEN }}
           commit-message: ":robot: Deploy Blog by GitHub Actions"
           git-config-name: "Amazing"

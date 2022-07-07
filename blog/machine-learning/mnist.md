@@ -1,19 +1,12 @@
 ---
-metaTitle: MachineLearning
 date: 2019-07-05
-tags:
-    - MachineLearning
-author: Amazing
-location: Xi'an
-summary: 本文主要有两个内容：
-         softmax回归算法和使用TensorFlow训练一个MNIST模型
 ---
-### 机器学习之MNIST
+# 机器学习之MNIST
 
-> MNIST是什么
+## MNIST是什么
 
----
-#### MNIST是一个计算机视觉数据集([官网链接](http://yann.lecun.com/exdb/mnist/))，它包含各种手写数字图片
+ MNIST是一个计算机视觉数据集([官网链接](http://yann.lecun.com/exdb/mnist/))，它包含各种手写数字图片
+
 ![An image](../../assets/images/MachineLearning/mnist_1.png)
 
 MNIST数据集分为两部分：
@@ -21,7 +14,7 @@ MNIST数据集分为两部分：
 - 60000行的训练数据集（mnist.train）
 - 10000行的测试数据集（mnist.test）
 
-*测试数据集用于评估和预测*
+测试数据集用于评估和预测
 
 每一个MNIST数据单元有两部分组成：一张包含手写数字的图片和一个对应的标签。我们把这些图片设为“xs”，把这些标签设为“ys”。训练数据集和测试数据集都包含xs和ys，比如训练数据集的图片是 mnist.train.images ，训练数据集的标签是 mnist.train.labels
 
@@ -31,21 +24,22 @@ MNIST数据集分为两部分：
 **mnist.train.images 是一个形态为  [60000, 784] 的张量（tensor）。第一个维度表示图片个数的索引，第二个维度表示图片中每一个像素的索引。每一个像素的取值为0或1，表示该像素的亮度**
 **mnist.train.labels 是一个结构为 [60000, 10] 的张量**
 
-> softmax函数
+## softmax函数
 
----
-#### softmax用于多分类过程中，它将多个神经元的输出，映射到（0,1）区间内，可以看成概率来理解:
+ softmax用于多分类过程中，它将多个神经元的输出，映射到（0,1）区间内，可以看成概率来理解
+
 $$S_i=\frac{e^i}{\sum_je^j}$$
 ![An image](../../assets/images/MachineLearning/mnist_3.png)
 *softmax就是将原来输出是3,1,-3通过softmax函数作用，就映射成为(0,1)的值，而这些值的累和为1（满足概率的性质），那么我们就可以将它理解成概率，在最后选取输出结点的时候，我们就可以选取概率最大（也就是值对应最大的）结点，作为我们的预测目标*
 
-> softmax函数在MNIST中的应用
----
+## softmax函数在MNIST中的应用
+
 对图片进行分类(0...9)：
 *在训练的过程中，我们需要设定额外的偏置量（bias）以排除在输入中引入的干扰数据。下图表示证据的提取计算公式，对于分类$i$给定一个$x$的输入得到*
 $$evidence_i=\sum_jW_{i,j}x_j+b_i$$
 
 ::: warning 备注
+
 - w的形状是一个[784,10]的张量，第一个向量表示每个图片都有784个像素点，第二个向量表示从“0”到“9”一共有10类图片
 - b的形状是[10]，他仅表示10个分类的偏移值
 :::
@@ -76,8 +70,8 @@ $$y=softmax(Wx+b)$$
 
 *如果想了解更多关于softmax回归的细节，[请阅读Michael Nieslen书中关于softmax的说明](http://neuralnetworksanddeeplearning.com/chap3.html#softmax)*
 
-> 在TensorFlow中仅仅一行代码就可以实现整个运算过程
----
+## 在TensorFlow中仅仅一行代码就可以实现整个运算过程
+
 ```python
 y = tf.nn.softmax(tf.matmul(x, W) + b)
 ```

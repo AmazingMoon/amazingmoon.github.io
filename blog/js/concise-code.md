@@ -1,15 +1,9 @@
 ---
-metaTitle: JavaScript
 date: 2021-01-21
-tags:
-    - JavaScript
-author: Amazing
-location: Xi'an
-summary: 持续更新
 ---
 
 
-# 总结JavaScript编码简洁之道
+# 告别if else
 
 ## 逻辑运算
 
@@ -18,6 +12,7 @@ summary: 持续更新
 ```js
 let a = obj || '-';
 ```
+
 等同于
 
 ```js
@@ -46,7 +41,7 @@ if (a === null || a === undefined) {
 }
 ```
 
-###  !!
+### !!
 
 ```js
 let a = '';
@@ -97,4 +92,3 @@ if (param === 'a' || param === 'b' || param === 'c') {
 const result = ['a', 'b', 'c', 'd', 'e'];
 if (result.includes('a')) console.log('!');
 ```
-
