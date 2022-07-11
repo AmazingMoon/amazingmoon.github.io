@@ -1,5 +1,5 @@
 ---
-date: 2021-01-21
+date: '2021-01-21'
 ---
 
 
@@ -41,7 +41,7 @@ if (a === null || a === undefined) {
 }
 ```
 
-### !!
+### &#33;&#33;
 
 ```js
 let a = '';
@@ -81,14 +81,14 @@ if (isTrump) {
 ### Array.includes
 
 ```js
+const result = ['a', 'b', 'c', 'd', 'e'];
+if (result.includes('a')) console.log('!');
+```
+
+等同于
+
+```js
 if (param === 'a' || param === 'b' || param === 'c') {
     console.log('!');
 }
-```
-
-简化
-
-```js
-const result = ['a', 'b', 'c', 'd', 'e'];
-if (result.includes('a')) console.log('!');
 ```
