@@ -2,18 +2,18 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import remarkToc from "remark-toc";
-import remarkMath from "remark-math";
 import remarkCollapse from "remark-collapse";
+import remarkMath from "remark-math";
 import sitemap from "@astrojs/sitemap";
+import { SITE } from "./src/config";
+import rehypeKatex from "rehype-katex";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://amazingmoon.github.io",
+  site: SITE.website,
   integrations: [
     tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
+      applyBaseStyles: false,
     }),
     react(),
     sitemap(),
@@ -29,22 +29,16 @@ export default defineConfig({
         },
       ],
     ],
-    rehypePlugins: ["rehype-katex"],
+    rehypePlugins: [rehypeKatex],
     shikiConfig: {
-      theme: "vitesse-dark",
+      theme: "dark-plus",
       wrap: true,
     },
-    extendDefaultPlugins: true,
   },
   vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          entryFileNames: "entry.[hash].js",
-          chunkFileNames: "chunks/chunk.[hash].js",
-          assetFileNames: "assets/asset.[hash][extname]",
-        },
-      },
+    optimizeDeps: {
+      exclude: ["@resvg/resvg-js"],
     },
   },
+  scopedStyleStrategy: "where",
 });

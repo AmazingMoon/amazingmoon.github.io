@@ -1,11 +1,11 @@
 ---
-date: '2019-06-16'
 author: Amazing Chen
-datetime: 2019-06-16
+pubDatetime: 2019-06-16
 title: Flutter中自定义ExpansionPanelList组件
 draft: false
+description: 魔改flutter原生组件
 tags:
-  - Flutter
+  - flutter
 ---
 
 ## 原生组件的痛点
@@ -13,8 +13,7 @@ tags:
 - 痛点一：打开的面板与相邻的标题有间隙，效果真的很丑
 - 痛点二：面板的下拉icon颜色跟着flutter theme走，不能修改颜色，也没有color的属性
 
-
-![An image](/assets/images/Mobile/Flutter/flutter_expansion_panel_list_1.png)
+![An image](@assets/images/Mobile/Flutter/flutter_expansion_panel_list_1.png)
 
 ## 解决方案
 
@@ -22,7 +21,7 @@ tags:
 
 > 增加color属性
 
-``` dart
+```dart
 import 'dart:math' as math;
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
@@ -117,7 +116,7 @@ class _CustomExpandIconState extends State<CustomExpandIcon> with SingleTickerPr
 
 > 去除组件中原有的dividers, Material Widget属性shadowColor设为透明,引用CustomExpandIcon组件
 
-``` dart
+```dart
 import 'package:flutter/material.dart';
 import 'custom_expand_icon.dart';
 
@@ -260,4 +259,4 @@ class _SaltedKey<S, V> extends LocalKey {
 
 ## 最终效果
 
-![An image](/assets/images/Mobile/Flutter/flutter_expansion_panel_list_2.png)
+![An image](@assets/images/Mobile/Flutter/flutter_expansion_panel_list_2.png)

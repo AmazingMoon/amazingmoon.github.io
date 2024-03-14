@@ -1,6 +1,6 @@
-import type { SocialObjects } from "./types";
+import type { Site, SocialObjects } from "./types";
 
-export const SITE = {
+export const SITE: Site = {
   website: "https://amazingmoon.github.io/",
   author: "Amazing Chen",
   desc: "Amazing's  Blog",
@@ -8,13 +8,18 @@ export const SITE = {
   lightAndDarkMode: true,
   postPerPage: 3,
   ogImage: "",
+  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
+
+export const LOCALE = {
+  lang: "en", // html lang code. Set this empty and default will be "en"
+  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+} as const;
 
 export const LOGO_IMAGE = {
   enable: true,
   svg: false,
   width: 40,
-  height: 40,
 };
 
 export const SOCIALS: SocialObjects = [
@@ -25,9 +30,9 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
-    name: "Twitter",
+    name: "X",
     href: "https://twitter.com/amcee3000",
-    linkTitle: `${SITE.title} on Twitter`,
+    linkTitle: `${SITE.title} on X`,
     active: true,
   },
   {

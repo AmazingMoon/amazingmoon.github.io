@@ -1,11 +1,11 @@
 ---
-date: '2018-11-12'
 author: Amazing Chen
-datetime: 2018-11-12
+pubDatetime: 2018-11-12
 title: Fabric节点间的网络架构
 draft: false
+description: 简单介绍一下Fabric节点
 tags:
-  - Blockchain
+  - blockchain
 ---
 
 ## 4种不同类型的服务节点
@@ -17,7 +17,7 @@ tags:
 
 ## Peer节点
 
- > 一个网络实体，维护ledger并运行Chaincode容器来对ledger执行read-write操作
+> 一个网络实体，维护ledger并运行Chaincode容器来对ledger执行read-write操作
 
 Peer节点可以担任多种角色
 
@@ -26,7 +26,7 @@ Peer节点可以担任多种角色
 - 主节点(Leader Peer)
 - 锚节点(Anchor Peer)
 
-![An image](/assets/images/Blockchain/fabric_peer1.png)
+![An image](@assets/images/Blockchain/fabric_peer1.png)
 
 每一个peer节点持有一个或多个账本，以及一个或多个智能合约。
 网络N由三个peer组成P1、P2和P3。每一个Peer都持有了一个账本实例L1；每个peer都通过链码（智能合约）S1去访问各自的账本L1。
@@ -35,8 +35,8 @@ Peer节点可以担任多种角色
 
 > 对账本操作的的代码（读写）
 
-*多账本和多链码*
-![An image](/assets/images/Blockchain/fabric_peer2.png)
+_多账本和多链码_
+![An image](@assets/images/Blockchain/fabric_peer2.png)
 
 ## Application
 
@@ -44,8 +44,8 @@ Peer节点可以担任多种角色
 
 通过连接到一个peer，application执行链码来查询或者更新账本。查询结果可以很快返回；但是更新账本需要更复杂的交互，这些交互涉及到application、peer还有orderer：
 
-![An image](/assets/images/Blockchain/fabric_peer3.png)
-*Orderer用来确保所有的Peer持有的账本同步更新*
+![An image](@assets/images/Blockchain/fabric_peer3.png)
+_Orderer用来确保所有的Peer持有的账本同步更新_
 
 - 账本查询：
 
@@ -66,13 +66,13 @@ Peer节点可以担任多种角色
 
 > 通道为网络中的所有模块提供了私有的沟通与交易渠道。这些模块包括peer节点、oderder节点、application。加入通道后，这些模块可以共享或管理通道内的所有账本。一个节点可以加入到多个通道中（拥有多个账本），但是每个通道的账本是隔离的。
 
-![An image](/assets/images/Blockchain/fabric_peer4.png)
+![An image](@assets/images/Blockchain/fabric_peer4.png)
 
 ## 组织(Organizations)
 
 > 一个区块链网络由多个组织组成。
 
-![An image](/assets/images/Blockchain/fabric_peer5.png)
+![An image](@assets/images/Blockchain/fabric_peer5.png)
 
 在图中，4个组织提供了8个peers，组成了整个区块链网络。通道C连接了其中的5个peers，其他的节点并没有连接到当前通道。但是其他peers（P2、P4和P6）加入了至少一个其他的通道。每个组织的application只会连接到自己所在组织的peers上。
 
@@ -80,7 +80,7 @@ Peer节点可以担任多种角色
 
 > MSP(Membership Service Provider),MSP是指为client和peer提供证书的系统抽象组件。Client用证书来认证他们的交易;peer用证书认证其交易背书。
 
-![An image](/assets/images/Blockchain/fabric_peer6.png)
+![An image](@assets/images/Blockchain/fabric_peer6.png)
 当一个Peer加入通道的时候，它的数字签名表明了它所在的组织。如图所示，P1和P2的数字签名有CA1签发；而P3和P4的数字签名由CA2签发。通过配置，通道C知道CA1来自组织ORG1；而CA2来自ORG2。ORG1.MSP和ORG2.MSP由通道的MSP统一管理。
 
 所有的节点在访问区块链网络的时候都需要进行身份认证。包括Peer节点、application、Orderer节点以及管理员等。
@@ -95,7 +95,7 @@ Peer节点可以担任多种角色
 
 - 步骤一：提案
 
-![An image](/assets/images/Blockchain/fabric_peer7.png)
+![An image](@assets/images/Blockchain/fabric_peer7.png)
 
 application产生一个交易提案，并将提案发送给所有相关的背书Peer节点。每个背书节点根据交易提案独立的执行链码，并返回提案回执。这个阶段背书节点并不更新本地账本，只是对提案签名并返回给application。当application收集到了足够的提案回执，提案阶段就完成了。
 
@@ -103,7 +103,7 @@ application产生一个交易提案，并将提案发送给所有相关的背书
 
 - 步骤二：打包
 
-![An image](/assets/images/Blockchain/fabric_peer8.png)
+![An image](@assets/images/Blockchain/fabric_peer8.png)
 
 打包操作由排序节点（Orderer）完成。所有application的交易在提案完成背书后，包含背书结果的回执会被发送到排序节点。排序节点会收到来自所有application的各种背书提案，它会对所有交易进行排序然后打包发给所有的Peers（包括先前参与背书的Peer），图中，A1发送的交易T1包含了回执R1和背书E1 E2；A2发送的交易T2包含了回执R2和背书E1。这些交易在排序节点中进行排序打包处理，形成一个块B2。
 
@@ -111,7 +111,7 @@ application产生一个交易提案，并将提案发送给所有相关的背书
 
 - 步骤三：验证
 
-![An image](/assets/images/Blockchain/fabric_peer9.png)
+![An image](@assets/images/Blockchain/fabric_peer9.png)
 
 打包后的交易会被分发到所有节点(Peer)。每个Peer节点会对打包的每一个交易进行验证，以确保每个交易都被相关节点背书，且背书回执是一致的。如果发现不一致，交易将会被审查并保留，不会被写入到账本中。
 

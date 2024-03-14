@@ -5,7 +5,7 @@ export interface Props {
   ariaLabel?: string;
   title?: string;
   disabled?: boolean;
-  target?: string;
+  openBlank?: boolean;
 }
 
 const {
@@ -14,25 +14,29 @@ const {
   ariaLabel,
   title,
   disabled = false,
-  target = "_self",
+  openBlank = false,
 } = Astro.props;
 ---
 
-<a
-  type="button"
-  href={disabled ? "#" : href}
-  tabindex={disabled ? "-1" : "0"}
-  class={`group ${className}`}
-  aria-label={ariaLabel}
-  title={title}
-  aria-disabled={disabled}
-  target={target}
->
-  <slot />
-</a>
-
-<style>
-  a {
-    @apply hover:text-skin-accent;
-  }
-</style>
+{
+  disabled ? (
+    <span
+      class={`group inline-block ${className}`}
+      aria-label={ariaLabel}
+      title={title}
+      aria-disabled={disabled}
+    >
+      <slot />
+    </span>
+  ) : (
+    <a
+      {href}
+      target={openBlank ? "_blank" : "_self"}
+      class={`group inline-block hover:text-skin-accent ${className}`}
+      aria-label={ariaLabel}
+      title={title}
+    >
+      <slot />
+    </a>
+  )
+}

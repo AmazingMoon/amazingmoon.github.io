@@ -1,22 +1,20 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
-import getSortedPosts from "@utils/getSortedPosts";
-import slugify from "@utils/slugify";
-import type { Frontmatter } from "src/types";
 import Socials from "@components/Socials.astro";
+import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
 
-const posts = await Astro.glob<Frontmatter>("../contents/**/*.md");
+const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(
-  ({ frontmatter }) => frontmatter.featured
-);
+const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
+const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
@@ -41,21 +39,63 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           ></path><circle cx="6" cy="18" r="2"></circle>
         </svg>
       </a>
-      <h2 class="text-2xl underline decoration-sky-500">写在最前面</h2>
+      <h2 class="text-2xl underline decoration-4 decoration-teal-500">
+        写在最前面
+      </h2>
       <p class="indent-8">
-        文章可能不会再更新了，给曾经写的少得可怜的blog留个记录。不过网站会一直更新，哎，就是玩儿。
+        文章停更，网站会一直更新，不定期使用新框架试验，给旧博文一个避风港。
       </p>
-      <h2 class="text-2xl underline decoration-sky-500">怎么不算呢</h2>
-      <p class="indent-8">
-        编程如逆水行舟，不进则退。
-      </p>
-      <h2 class="text-2xl underline decoration-sky-500">给未来的我</h2>
-      <p class="indent-8">
-        牛逼的大佬很多，向大佬们学习，努力站在巨人的肩膀上。
-      </p>
+      <h2 class="text-2xl underline decoration-4 decoration-teal-500">
+        怎么不算呢
+      </h2>
+      <p class="indent-8">编程如逆水行舟，不进则退。</p>
+      <h2 class="text-2xl underline decoration-4 decoration-teal-500">
+        给未来的我
+      </h2>
+      <p class="indent-8">相互学习，站在巨人的肩膀上。</p>
     </section>
+    <!-- {
+      featuredPosts.length > 0 && (
+        <>
+          <section id="featured">
+            <h2>Featured</h2>
+            <ul>
+              {featuredPosts.map(({ data, slug }) => (
+                <Card
+                  href={`/posts/${slug}/`}
+                  frontmatter={data}
+                  secHeading={false}
+                />
+              ))}
+            </ul>
+          </section>
+          {recentPosts.length > 0 && <Hr />}
+        </>
+      )
+    }
+
+    {
+      recentPosts.length > 0 && (
+        <section id="recent-posts">
+          <h2>Recent Posts</h2>
+          <ul>
+            {recentPosts.map(
+              ({ data, slug }, index) =>
+                index < 4 && (
+                  <Card
+                    href={`/posts/${slug}/`}
+                    frontmatter={data}
+                    secHeading={false}
+                  />
+                )
+            )}
+          </ul>
+        </section>
+      )
+    } -->
+
     <div class="all-posts-btn-wrapper">
-      <LinkButton href="/posts">
+      <LinkButton href="/posts/">
         All Posts
         <svg xmlns="http://www.w3.org/2000/svg"
           ><path
@@ -64,53 +104,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </svg>
       </LinkButton>
     </div>
-    <!-- {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Featured</h2>
-            <ul>
-              {featuredPosts.map(({ frontmatter }) => (
-                <Card
-                  href={`/posts/${slugify(frontmatter)}`}
-                  post={frontmatter}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
-          </section>
-          <Hr />
-        </>
-      )
-    }
-
-    <section id="recent-posts">
-      <h2>Recent Posts</h2>
-      <ul>
-        {
-          sortedPosts.map(
-            ({ frontmatter }, index) =>
-              index < 4 && (
-                <Card
-                  href={`/posts/${slugify(frontmatter)}`}
-                  post={frontmatter}
-                  secHeading={false}
-                />
-              )
-          )
-        }
-      </ul>
-      <div class="all-posts-btn-wrapper">
-        <LinkButton href="/posts">
-          All Posts
-          <svg xmlns="http://www.w3.org/2000/svg"
-            ><path
-              d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-            ></path>
-          </svg>
-        </LinkButton>
-      </div>
-    </section> -->
   </main>
 
   <Footer />
@@ -119,37 +112,37 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pt-8 pb-6;
+    @apply pb-6 pt-8;
   }
   #hero h1 {
-    @apply inline-block font-bold my-4 sm:my-8 text-3xl sm:text-5xl;
+    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
   }
   #hero .rss-link {
     @apply mb-6;
   }
   #hero .rss-icon {
-    @apply h-6 w-6 scale-110 sm:scale-125 mb-2 sm:mb-3 fill-skin-accent;
+    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
   }
   #hero p {
     @apply my-2;
   }
   .social-wrapper {
-    @apply flex flex-col sm:flex-row sm:items-center mt-4;
+    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
   }
   .social-links {
-    @apply whitespace-nowrap mr-2 sm:mb-0 mb-1;
+    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    @apply pt-12 pb-6;
+    @apply pb-6 pt-12;
   }
   #featured h2,
   #recent-posts h2 {
-    @apply font-semibold text-2xl tracking-wide;
+    @apply text-2xl font-semibold tracking-wide;
   }
   .all-posts-btn-wrapper {
-    @apply text-center my-8;
+    @apply my-8 text-center;
   }
 </style>

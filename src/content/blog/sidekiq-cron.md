@@ -1,23 +1,23 @@
 ---
-date: '2017-11-17'
 author: Amazing Chen
-datetime: 2017-11-17
+pubDatetime: 2017-11-17
 title: 谈一谈Sidekiq-Cron
 draft: false
+description: ruby中的定时任务
 tags:
-  - Ruby
+  - ruby
 ---
 
 ## 安装
 
-``` bash
-  gem install sidekiq 
+```bash
+  gem install sidekiq
   gem install sidekiq-cron
 ```
 
 ## 新建job
 
-``` ruby
+```ruby
 class FirstJob < ApplicationJob
   queue_as :default
   def perform
@@ -26,7 +26,7 @@ class FirstJob < ApplicationJob
 end
 ```
 
-*这里写的定时任务基于active job，其余的写法请参考[sidekiq-cron文档](https://github.com/ondrejbartas/sidekiq-cron)*
+_这里写的定时任务基于active job，其余的写法请参考[sidekiq-cron文档](https://github.com/ondrejbartas/sidekiq-cron)_
 
 ## /config中新建schedule.yml
 
@@ -36,11 +36,11 @@ FirstJob:
   class: FirstJob
 ```
 
-*上面代码的意思是每个月20号执行定时任务firstjob，关于更多cron的用法，请参考[Cron Format](http://www.nncron.ru/help/EN/working/cron-format.htm)*
+_上面代码的意思是每个月20号执行定时任务firstjob，关于更多cron的用法，请参考[Cron Format](http://www.nncron.ru/help/EN/working/cron-format.htm)_
 
 ## /config/initializers中新建sidekiq.rb
 
-``` ruby
+```ruby
 schedule_file = 'config/scheduler.yml'
 
 if File.exist?(schedule_file) && Sidekiq.server?
@@ -50,16 +50,16 @@ end
 
 ## 配置
 
- /config/application.rb文件中添加：
+/config/application.rb文件中添加：
 
-``` ruby
+```ruby
 config.active_job.queue_adapter = :sidekiq
 ```
 
 ## 启动
 
-``` bash
+```bash
 redis-server & sidekiq
 ```
 
-*由于redis为sidekiq提供数据存储，所以启动sidekiq前必须先启动redis,更多关于redis请参考[redis](https://github.com/antirez/redis)*
+_由于redis为sidekiq提供数据存储，所以启动sidekiq前必须先启动redis,更多关于redis请参考[redis](https://github.com/antirez/redis)_

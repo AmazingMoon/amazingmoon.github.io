@@ -3,13 +3,17 @@
     <!-- Katex -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
-      integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
     />
     <style is:global>
+      .katex-display > .katex {
+        border-radius: 0.25rem;
+        background-color: rgba(var(--color-card), var(--tw-bg-opacity));
+        --tw-bg-opacity: 0.75;
+        padding: 0.25rem;
+      }
       .katex .base {
-        color: black;
+        color: rgba(var(--color-text-base), var(--tw-text-opacity));
       }
     </style>
   </head>

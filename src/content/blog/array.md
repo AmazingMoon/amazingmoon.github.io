@@ -1,11 +1,11 @@
 ---
-date: '2019-10-21'
+pubDatetime: 2019-10-21
 author: Amazing Chen
-datetime: 2019-10-21
 title: 总结JS数组用法
 draft: false
+description: 列举一些常见函数
 tags:
-  - JavaScript
+  - javascript
 ---
 
 ## forEach和map
@@ -15,7 +15,7 @@ tags:
 ```javascript
 let arr = [1, 2, 3, 4, 5];
 arr.forEach((num, index) => {
- return arr[index] = num * 2;
+  return (arr[index] = num * 2);
 });
 //arr = [2, 4, 6, 8, 10]
 ```
@@ -23,7 +23,7 @@ arr.forEach((num, index) => {
 ```javascript
 let arr = [1, 2, 3, 4, 5];
 let doubled = arr.map(num => {
- return num * 2;
+  return num * 2;
 });
 //doubled = [2, 4, 6, 8, 10]
 ```
@@ -31,20 +31,20 @@ let doubled = arr.map(num => {
 ## findIndex, find, filter
 
 ```javascript
-let arr = [{name: 'swk'}, {name: 'zwn'}, {name: 'swj'}];
-let index = arr.findIndex(item => item.name === 'zwn');
+let arr = [{ name: "swk" }, { name: "zwn" }, { name: "swj" }];
+let index = arr.findIndex(item => item.name === "zwn");
 //index = 1
 ```
 
-``` javascript
-let arr = [{name: 'swk'}, {name: 'zwn'}, {name: 'swj'}];
-let obj = arr.find(item => item.name === 'zwn');
+```javascript
+let arr = [{ name: "swk" }, { name: "zwn" }, { name: "swj" }];
+let obj = arr.find(item => item.name === "zwn");
 //obj = {name: 'zwn'}
 ```
 
-``` javascript
-let arr = [{name: 'swk'}, {name: 'zwn'}, {name: 'swj'}];
-let newArr = arr.filter(item => item.name != 'zwn');
+```javascript
+let arr = [{ name: "swk" }, { name: "zwn" }, { name: "swj" }];
+let newArr = arr.filter(item => item.name != "zwn");
 //newArr = [{name: 'swk'}, {name: 'swj'}]
 ```
 
@@ -63,9 +63,9 @@ yearArr.sort((a, b) => b - a);
 ```javascript
 //举个例子：按属性对object分类
 let people = [
-  { name: 'Alice', age: 21 },
-  { name: 'Max', age: 20 },
-  { name: 'Jane', age: 20 }
+  { name: "Alice", age: 21 },
+  { name: "Max", age: 20 },
+  { name: "Jane", age: 20 },
 ];
 
 function groupBy(objectArray, property) {
@@ -78,28 +78,28 @@ function groupBy(objectArray, property) {
     return acc;
   }, {});
 }
-let groupedPeople = groupBy(people, 'age');
-// { 
+let groupedPeople = groupBy(people, "age");
+// {
 //   20: [
-//     { name: 'Max', age: 20 }, 
+//     { name: 'Max', age: 20 },
 //     { name: 'Jane', age: 20 }
-//   ], 
-//   21: [{ name: 'Alice', age: 21 }] 
+//   ],
+//   21: [{ name: 'Alice', age: 21 }]
 // }
 ```
 
 ## every
 
->every测试一个数组内的所有元素是否都能通过某个指定函数的测试,它返回一个布尔值
+> every测试一个数组内的所有元素是否都能通过某个指定函数的测试,它返回一个布尔值
 
 ```javascript
-[12, 5, 8, 130, 44].every(x => x >= 10); 
+[12, 5, 8, 130, 44].every(x => x >= 10);
 //false
 ```
 
 ## some
 
->some测试数组中是不是至少有1个元素通过了被提供的函数测试,它返回的是一个Boolean类型的值
+> some测试数组中是不是至少有1个元素通过了被提供的函数测试,它返回的是一个Boolean类型的值
 
 ```javascript
 [12, 5, 8, 1, 4].some(x => x > 10);
@@ -108,7 +108,7 @@ let groupedPeople = groupBy(people, 'age');
 
 ## copyWithin
 
->copyWithin方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，不会改变原数组的长度
+> copyWithin方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，不会改变原数组的长度
 
 ```javascript
 let numbers = [1, 2, 3, 4, 5];
