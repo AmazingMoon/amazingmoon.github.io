@@ -11,6 +11,9 @@ import rehypeKatex from "rehype-katex";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  build: {
+    assets: "statics",
+  },
   integrations: [
     tailwind({
       applyBaseStyles: false,
