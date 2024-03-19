@@ -10,7 +10,7 @@ tags:
 
 ## 几个配置
 
-- 在[Travis CI官网](https://www.travis-ci.com/)中通过github账号登录
+- 在<a href="https://www.travis-ci.com/" target="_blank">Travis CI</a>中通过github账号登录
 - 选择需要构建的项目
 
 ![An image](@assets/images/CI/ci_hexo1.png)

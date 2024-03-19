@@ -1,0 +1,30 @@
+---
+import { SITE } from "@config";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Layout from "./Layout.astro";
+import Main from "@layouts/Main.astro";
+
+export interface Props {
+  frontmatter: {
+    title: string;
+    description?: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={`${frontmatter.title} | ${SITE.title}`}>
+  <Header activeNav="utopia" />
+  <Main
+    pageTitle={frontmatter.title}
+    pageDesc="壹川煙草，滿城風絮，梅子黃時雨。"
+  >
+    <section id="utopia" class="prose mb-28 max-w-3xl px-0 prose-img:border-0">
+      <slot />
+    </section>
+  </Main>
+  <Footer />
+</Layout>

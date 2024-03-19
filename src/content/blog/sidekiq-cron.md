@@ -26,7 +26,7 @@ class FirstJob < ApplicationJob
 end
 ```
 
-_这里写的定时任务基于active job，其余的写法请参考[sidekiq-cron文档](https://github.com/ondrejbartas/sidekiq-cron)_
+_这里写的定时任务基于active job，其余的写法请查看<a href="https://github.com/ondrejbartas/sidekiq-cron" target="_blank">sidekiq-cron</a>_
 
 ## /config中新建schedule.yml
 
@@ -36,7 +36,7 @@ FirstJob:
   class: FirstJob
 ```
 
-_上面代码的意思是每个月20号执行定时任务firstjob，关于更多cron的用法，请参考[Cron Format](http://www.nncron.ru/help/EN/working/cron-format.htm)_
+_上面代码的意思是每个月20号执行定时任务firstjob，关于更多cron的用法，请查看<a href="http://www.nncron.ru/help/EN/working/cron-format.htm" target="_blank">Cron Format</a>_
 
 ## /config/initializers中新建sidekiq.rb
 
@@ -62,4 +62,4 @@ config.active_job.queue_adapter = :sidekiq
 redis-server & sidekiq
 ```
 
-_由于redis为sidekiq提供数据存储，所以启动sidekiq前必须先启动redis,更多关于redis请参考[redis](https://github.com/antirez/redis)_
+_由于redis为sidekiq提供数据存储，所以启动sidekiq前必须先启动redis,更多请查看<a href="https://github.com/antirez/redis" target="_blank">redis</a>_

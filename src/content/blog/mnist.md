@@ -11,7 +11,7 @@ tags:
 
 ## MNIST是什么
 
-MNIST是一个计算机视觉数据集([官网链接](http://yann.lecun.com/exdb/mnist/))，它包含各种手写数字图片
+<a href="https://www.tensorflow.org/datasets/catalog/mnist" target="_blank">MNIST</a>是一个计算机视觉数据集，它包含各种手写数字图片
 
 ![An image](@assets/images/MachineLearning/mnist_1.png)
 
@@ -89,7 +89,7 @@ $$
 y=softmax(Wx+b)
 $$
 
-_如果想了解更多关于softmax回归的细节，[请阅读Michael Nieslen书中关于softmax的说明](http://neuralnetworksanddeeplearning.com/chap3.html#softmax)_
+如果想了解更多关于softmax回归的细节，请阅读<a href="http://neuralnetworksanddeeplearning.com/chap3.html#softmax" target="_blank">Michael Nieslen书中关于softmax的说明</a>
 
 ## 在TensorFlow中仅仅一行代码就可以实现整个运算过程
 

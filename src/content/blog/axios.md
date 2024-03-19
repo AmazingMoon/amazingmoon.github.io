@@ -123,4 +123,4 @@ http.get("news-list", { page: 1 }).then(res => {});
 http.post("login", { name: "Trump", password: "maga" }).then(res => {});
 ```
 
-_axios完整用法请阅读[axios文档](https://github.com/axios/axios)_
+_axios完整用法请阅读<a href="https://github.com/axios/axios" target="_blank">axios</a>_
