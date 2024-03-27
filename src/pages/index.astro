@@ -39,17 +39,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           ></path><circle cx="6" cy="18" r="2"></circle>
         </svg>
       </a>
-      <h2 class="text-2xl underline decoration-4 decoration-teal-500">
+      <h2 class="gradient-underline motion1 relative table text-2xl">
         写在最前面
       </h2>
-      <p class="indent-8">
-        文章停更，网站会一直更新，不定期使用新框架试验，给旧博文一个避风港。
-      </p>
-      <h2 class="text-2xl underline decoration-4 decoration-teal-500">
+      <p class="indent-8">文章停更，网站会一直更新，不定期使用新框架试验。</p>
+      <h2 class="gradient-underline motion2 relative table text-2xl">
         怎么不算呢
       </h2>
       <p class="indent-8">编程如逆水行舟，不进则退。</p>
-      <h2 class="text-2xl underline decoration-4 decoration-teal-500">
+      <h2 class="gradient-underline motion3 relative table text-2xl">
         给未来的我
       </h2>
       <p class="indent-8">相互学习，站在巨人的肩膀上。</p>
@@ -110,7 +108,37 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 </Layout>
 
 <style>
+  @keyframes example {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
   /* ===== Hero Section ===== */
+  .gradient-underline:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    height: 4px;
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+  }
+  .motion1:after {
+    animation: example 3s cubic-bezier(0.42, 0, 0.36, 1) infinite;
+  }
+
+  .motion2:after {
+    animation: example 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  }
+
+  .motion3:after {
+    animation: example 3s cubic-bezier(0.42, 0, 0.8, 1) infinite;
+  }
+
   #hero {
     @apply pb-6 pt-8;
   }
