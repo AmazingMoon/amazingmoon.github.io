@@ -21,6 +21,7 @@ const { activeNav } = Astro.props;
               src={`/assets/${LOGO_IMAGE.svg ? "logo.svg" : "logo.png"}`}
               alt={SITE.title}
               width={LOGO_IMAGE.width}
+              class="hover:animate-pulse"
             />
           ) : (
             SITE.title
