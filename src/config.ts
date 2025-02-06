@@ -36,12 +36,6 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
-    name: "Instagram",
-    href: "https://www.instagram.com/amcee3000",
-    linkTitle: `${SITE.title} on Instagram`,
-    active: true,
-  },
-  {
     name: "Mail",
     href: "mailto:804721028@qq.com",
     linkTitle: `Send an email to ${SITE.title}`,
